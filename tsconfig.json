@@ -5,8 +5,8 @@
         "target": "ES2020",
         "lib": [
             "dom",
-            "dom.iterable",
-            "esnext"
+            "ESNext",
+            "ES2020",
         ],
         "allowJs": true,
         "skipLibCheck": true,
@@ -14,7 +14,7 @@
         "forceConsistentCasingInFileNames": true,
         "noEmit": false,
         "esModuleInterop": true,
-        "module": "UMD",
+        "module": "ES2015",
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": true,
@@ -26,14 +26,15 @@
                 "src/*"
             ]
         },
+        "types": []
     },
-    "files": [
-        "src/*.ts",
+    "include": [
+        "src/index.ts",
         "src/**/*.ts",
     ],
     "exclude": [
         "node_modules/*",
-        "src/*.spec.*",
-        "src/**/*.spec.*"
+        "*.spec.*",
+        "**/*.spec.*"
     ]
 }

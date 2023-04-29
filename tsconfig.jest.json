@@ -4,6 +4,12 @@
             "jest"
         ]
     },
+    "compilerOptions": {
+        "types": [
+            "jest",
+            "node"
+        ]
+    },
     "extends": "./tsconfig.json",
     "include": [
         "*.js",

@@ -2,11 +2,11 @@ import { StringOrGenerator } from './types';
 
 export const escapeHtml = (s: string, flags = 255) => {
 	return s
-		.replaceAll('<', '&lt;')
-		.replaceAll('>', '&gt;')
-		.replaceAll('&', '&amp;')
-		.replaceAll('"', '&quot;')
-		.replaceAll("'", '&squot;');
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/&/g, '&amp;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&squot;');
 };
 
 export const convertFmtListToString = (

@@ -67,8 +67,8 @@ export class CodeHandler extends AbstractBlockHandler {
 			`<pre><code class='language-${this.lang || 'text'}'>` +
 				this._lines
 					.join('\n')
-					.replaceAll('<', '&lt;')
-					.replaceAll('>', '&gt;') +
+					.replace(/</g, '&lt;')
+					.replace(/>/g, '&gt;') +
 				`</code></pre>`,
 		];
 		this._lines = [];
