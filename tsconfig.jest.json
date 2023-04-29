@@ -1,0 +1,18 @@
+{
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    },
+    "extends": "./tsconfig.json",
+    "include": [
+        "*.js",
+        "*.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.spec.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
