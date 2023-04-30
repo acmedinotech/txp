@@ -23,7 +23,12 @@
         "jsx": "preserve",
         "incremental": true,
         "baseUrl": ".",
-        "types": []
+        "types": [],
+        "paths": {
+            "txp/*": [
+                "./src/*"
+            ]
+        }
     },
     "ts-node": {
         "esm": true,

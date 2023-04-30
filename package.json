@@ -11,8 +11,8 @@
     "typescript": "^5.0.4"
   },
   "alias": {
-    "src": [
-      "src/*"
+    "txp": [
+      "./src/*"
     ]
   },
   "devDependencies": {
