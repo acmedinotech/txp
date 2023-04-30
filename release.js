@@ -20,9 +20,31 @@ const prompt = async (prompt, defaultVal = '') => {
 
 const package = require('./package.json');
 
+const cmdRunner = async (cmd, debug = true) => {
+	return new Promise((ok, error) => {
+		exec(cmd, (err, stdout, stderr) => {
+			if (debug) {
+				console.log(`📺  ${stdout}`);
+				console.log(`🪵  ${stderr}`);
+			}
+			if (err) {
+				error(err);
+			} else {
+				ok(stdout);
+			}
+		});
+	});
+};
+
 (async () => {
 	console.log(`🔍 package version: ${package['version']})`);
-	const desc = await prompt(`release note (REQUIRED):`);
+	const lastCommit = (
+		await cmdRunner(`git log -1 --pretty=%B`, false)
+	).trim();
+	const desc = await prompt(
+		`release note (required)\n   last commit: "${lastCommit}"\n:`,
+		lastCommit
+	);
 	if (desc.trim() === '') {
 		console.error('❌ release note is required');
 		process.exit(1);
@@ -36,18 +58,20 @@ const package = require('./package.json');
 		return;
 	}
 
-	exec(
-		`git tag -a v${package['version']} -m "${desc}" && git push --tags origin && npm publish --access public`,
-		(err, stdout, stderr) => {
-			console.log(`📺  ${stdout}`);
-			console.log(`🪵  ${stderr}`);
-			if (err) {
-				console.error(`❌`, err);
-				process.exit(1);
-			}
+	const commands = [
+		`echo '# tagging...' && git tag -a v${package['version']} -m "${desc}" && git tag -n`,
+		`echo '# pushing tag...' && git push --tags origin`,
+		`echo '# publishing to npm...' && npm publish --access public`,
+	];
 
-			console.log(`✅  tagged and pushed!`);
-			process.exit(0);
+	try {
+		for (const cmd of commands) {
+			await cmdRunner(cmd);
 		}
-	);
+		console.log(`✅  tagged and pushed!`);
+		process.exit(0);
+	} catch (err) {
+		console.error(`❌`, err);
+		process.exit(1);
+	}
 })();
