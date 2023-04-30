@@ -40,11 +40,13 @@
     "webpack-node-externals": "^3.0.0"
   },
   "scripts": {
-    "test": "npx jest"
+    "test": "npx jest",
+    "release:validate": "yarn test && tsc && echo '✅ release ready to go' && echo git sha: `git rev-parse HEAD` && echo '> run release.sh to tag/publish'",
+    "release": "node release.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/acmedinotech/txp.git"
+    "url": "https://github.com/acmedinotech/txp.git"
   },
   "keywords": [
     "text",
