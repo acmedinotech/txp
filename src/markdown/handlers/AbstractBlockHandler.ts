@@ -5,7 +5,7 @@ import {
 	InlineHandler,
 	LineContext,
 	ProcessResult,
-} from 'txp/types';
+} from '../../types';
 import { MarkdownDefaultInlineHandler } from '../inlineHandlers/index';
 
 export class AbstractBlockHandler implements BlockHandler {

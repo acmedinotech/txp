@@ -6,7 +6,7 @@ import {
 	ReferenceValue,
 	REFERENCE_MAP_KEY,
 	StringOrGenerator,
-} from 'txp/types';
+} from '../../types';
 import { escapeHtml } from '../../utils';
 
 const label_open = 0;

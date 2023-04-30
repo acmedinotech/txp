@@ -2,7 +2,7 @@ import {
 	BlockHandlerState,
 	FormattedLineContext,
 	LineContext,
-} from 'txp/types';
+} from '../../types';
 import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 export class HorizontalRuleHandler extends AbstractBlockHandler {

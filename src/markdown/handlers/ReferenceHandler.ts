@@ -3,7 +3,7 @@ import {
 	FormattedLineContext,
 	LineContext,
 	REFERENCE_MAP_KEY,
-} from 'txp/types';
+} from '../../types';
 import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 export const REFERENCE_HANDLER_ID = 'markdown.block.reference';

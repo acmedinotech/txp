@@ -9,8 +9,8 @@ import {
 	HorizontalRuleHandler,
 	ReferenceHandler,
 } from './handlers/index';
-import { InlineHandler, ParseHandler } from 'txp/types';
-import { GenericParseHandler } from 'txp/core';
+import { InlineHandler, ParseHandler } from '../types';
+import { GenericParseHandler } from '../core';
 import { MarkdownDefaultInlineHandler } from './inlineHandlers/index';
 
 export class MarkdownParseHandler extends GenericParseHandler {

@@ -3,7 +3,7 @@ import {
 	FormattedLineContext,
 	LineContext,
 	ProcessResult,
-} from 'txp/types';
+} from '../../types';
 import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 export class DataHandler extends AbstractBlockHandler {

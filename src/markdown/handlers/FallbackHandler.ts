@@ -5,7 +5,7 @@ import {
 	LineContext,
 	ProcessResult,
 	StringOrGenerator,
-} from 'txp/types';
+} from '../../types';
 import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 /**

@@ -5,7 +5,7 @@ import {
 	LineContext,
 	ProcessResult,
 	InlineStateMachine,
-} from 'txp/types';
+} from '../../types';
 import {
 	getLinkBracketHandler,
 	getLinkImageStateMachine,

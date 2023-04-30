@@ -3,7 +3,7 @@ import {
 	FormattedLineContext,
 	LineContext,
 	ParseHandler,
-} from 'txp/types';
+} from '../../types';
 import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 export class BlockquoteHandler extends AbstractBlockHandler {
