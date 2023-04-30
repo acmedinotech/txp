@@ -3,8 +3,8 @@ import {
 	FormattedLineContext,
 	LineContext,
 	ParseHandler,
-} from '../../types';
-import { AbstractBlockHandler } from './AbstractBlockHandler';
+} from 'txp/types.mts';
+import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
 
 export class BlockquoteHandler extends AbstractBlockHandler {
 	_id = 'markdown.block.blockquote';

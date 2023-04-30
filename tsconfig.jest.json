@@ -12,11 +12,11 @@
     },
     "extends": "./tsconfig.json",
     "include": [
-        "*.js",
-        "*.ts",
-        "**/*.ts",
-        "**/*.tsx",
-        "**/*.spec.ts"
+        "*.*js",
+        "*.*ts",
+        "**/*.*ts",
+        "**/*.*tsx",
+        "**/*.spec.mts"
     ],
     "exclude": [
         "node_modules"

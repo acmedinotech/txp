@@ -1,5 +1,5 @@
-import { getFormattedStringWithHandler } from '../../testUtils';
-import { ListHandler } from './ListHandler';
+import { getFormattedStringWithHandler } from '../../testUtils.mts';
+import { ListHandler } from './ListHandler.mts';
 
 const listBasic = `* **one**
 - _two_

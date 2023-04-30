@@ -1,4 +1,4 @@
-import { getHandler } from '../../testUtils';
+import { getHandler } from '../../testUtils.mts';
 
 const sampleText = `this is a paragraph. **bold** and _italic_.
 paragraph continues on another line.`;

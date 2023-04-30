@@ -5,8 +5,8 @@ import {
 	LineContext,
 	ParseHandler,
 	ProcessResult,
-} from './types';
-import { convertFmtListToString } from './utils';
+} from './types.mts';
+import { convertFmtListToString } from './utils.mts';
 
 export class GenericParseHandler implements ParseHandler {
 	defaultHandlers: BlockHandler[] = [];

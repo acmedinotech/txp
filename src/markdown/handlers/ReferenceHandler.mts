@@ -3,8 +3,8 @@ import {
 	FormattedLineContext,
 	LineContext,
 	REFERENCE_MAP_KEY,
-} from '../../types';
-import { AbstractBlockHandler } from './AbstractBlockHandler';
+} from 'txp/types.mts';
+import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
 
 export const REFERENCE_HANDLER_ID = 'markdown.block.reference';
 

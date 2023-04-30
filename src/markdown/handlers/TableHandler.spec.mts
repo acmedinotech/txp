@@ -1,5 +1,5 @@
-import { TableHandler } from './TableHandler';
-import { getFormattedStringWithHandler } from '../../testUtils';
+import { TableHandler } from './TableHandler.mts';
+import { getFormattedStringWithHandler } from '../../testUtils.mts';
 
 describe('txp / markdown / handlers / class TableHandler', () => {
 	it('it parses table', () => {

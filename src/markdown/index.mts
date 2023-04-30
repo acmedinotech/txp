@@ -8,10 +8,10 @@ import {
 	TableHandler,
 	HorizontalRuleHandler,
 	ReferenceHandler,
-} from './handlers';
-import { InlineHandler, ParseHandler } from '../types';
-import { GenericParseHandler } from '../core';
-import { MarkdownDefaultInlineHandler } from './inlineHandlers';
+} from './handlers/index.mts';
+import { InlineHandler, ParseHandler } from 'txp/types.mts';
+import { GenericParseHandler } from 'txp/core.mts';
+import { MarkdownDefaultInlineHandler } from './inlineHandlers/index.mts';
 
 export class MarkdownParseHandler extends GenericParseHandler {
 	/**

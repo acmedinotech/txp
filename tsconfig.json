@@ -10,18 +10,18 @@
         ],
         "module": "ES2020",
         "declaration": true,
-        "moduleResolution": "node",
+        "moduleResolution": "node16",
         "allowJs": true,
         "skipLibCheck": true,
         "strict": true,
         "forceConsistentCasingInFileNames": true,
         "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true,
         "noEmit": false,
         "esModuleInterop": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
         "jsx": "preserve",
-        "incremental": true,
         "baseUrl": ".",
         "types": [],
         "paths": {
@@ -30,12 +30,9 @@
             ]
         }
     },
-    "ts-node": {
-        "esm": true,
-    },
     "include": [
-        "src/index.ts",
-        "src/**/*.ts",
+        "src/index.*ts",
+        "src/**/*.*ts",
     ],
     "exclude": [
         "node_modules/*",

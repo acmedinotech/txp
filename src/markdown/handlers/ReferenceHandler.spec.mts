@@ -1,6 +1,6 @@
-import { ReferenceHandler, REFERENCE_HANDLER_ID } from './ReferenceHandler';
-import { parseStringWithHandler } from '../../testUtils';
-import { REFERENCE_MAP_KEY } from '../../types';
+import { ReferenceHandler, REFERENCE_HANDLER_ID } from './ReferenceHandler.mts';
+import { parseStringWithHandler } from '../../testUtils.mts';
+import { REFERENCE_MAP_KEY } from 'txp/types.mts';
 
 describe('txp / markdown / handlers / class ReferenceHandler', () => {
 	it('it parses and returns references as metadata', () => {

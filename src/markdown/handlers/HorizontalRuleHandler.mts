@@ -2,8 +2,8 @@ import {
 	BlockHandlerState,
 	FormattedLineContext,
 	LineContext,
-} from '../../types';
-import { AbstractBlockHandler } from './AbstractBlockHandler';
+} from 'txp/types.mts';
+import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
 
 export class HorizontalRuleHandler extends AbstractBlockHandler {
 	_id = 'markdown.block.horizontalrule';

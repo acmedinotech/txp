@@ -5,10 +5,15 @@ export default {
 	preset: 'ts-jest',
 	testEnvironment: 'node',
 	verbose: true,
+	testMatch: ['<rootDir>/src/**/*.spec.*ts'],
+	moduleFileExtensions: ['mts', 'ts', 'js'],
 	transform: {
-		'^.+\\.ts$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.jest.json' }],
+		'^.+\\.m?ts$': [
+			'ts-jest',
+			{ tsconfig: '<rootDir>/tsconfig.jest.json' },
+		],
 	},
 	moduleNameMapper: {
-		'^src/(.*)': '<rootDir>/src/$1',
+		'^txp/(.*)': '<rootDir>/src/$1',
 	},
 };
