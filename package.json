@@ -2,13 +2,17 @@
   "name": "@acmedinotech/txp",
   "version": "0.0.1",
   "description": "extensible block-style text parser",
-  "main": "dist/index.js",
   "author": "kaiser shahid <kaisershahid@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
+  "main": "dist/txp.js",
+  "files": [
+    "./dist",
+    "./README.md"
+  ],
   "alias": {
     "txp": [
       "./src/*"
