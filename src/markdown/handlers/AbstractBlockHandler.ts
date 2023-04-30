@@ -5,8 +5,8 @@ import {
 	InlineHandler,
 	LineContext,
 	ProcessResult,
-} from 'txp/types.mts';
-import { MarkdownDefaultInlineHandler } from '../inlineHandlers/index.mts';
+} from 'txp/types';
+import { MarkdownDefaultInlineHandler } from '../inlineHandlers/index';
 
 export class AbstractBlockHandler implements BlockHandler {
 	readonly _id: string;

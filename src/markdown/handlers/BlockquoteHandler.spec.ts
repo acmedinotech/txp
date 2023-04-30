@@ -1,5 +1,5 @@
-import { getFormattedStringWithHandler } from '../../testUtils.mts';
-import { BlockquoteHandler } from './BlockquoteHandler.mts';
+import { getFormattedStringWithHandler } from '../../testUtils';
+import { BlockquoteHandler } from './BlockquoteHandler';
 
 describe('txp / markdown / handlers / class BlockquoteHandler', () => {
 	it('it parses basic blockquote', () => {

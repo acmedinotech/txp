@@ -1,8 +1,8 @@
 import {
 	getLinkBracketHandler,
 	getLinkImageStateMachine,
-} from './LinkImageHandler.mts';
-import { feedStateMachine } from '../../testUtils.mts';
+} from './LinkImageHandler';
+import { feedStateMachine } from '../../testUtils';
 
 describe('txp / markdown / inlineHandler / LinkImageHandler', () => {
 	describe('#getLinkImageStateMachine()', () => {

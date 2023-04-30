@@ -1,4 +1,4 @@
-import { parser } from './index.mts';
+import { parser } from './index';
 
 const sampleMarkdown = `---
 data block

@@ -5,11 +5,11 @@ import {
 	LineContext,
 	ProcessResult,
 	InlineStateMachine,
-} from 'txp/types.mts';
+} from 'txp/types';
 import {
 	getLinkBracketHandler,
 	getLinkImageStateMachine,
-} from './LinkImageHandler.mts';
+} from './LinkImageHandler';
 
 export const MARKDOWN_INLINE_TOKENS =
 	/(\*\*\*|\*\*|\*|___|__|_|!\[|\[|\]|\s+|\(|\)|``|`|<|>|\\|\{|\}|#|\+|-|\.|\!|[a-zA-Z0-9]+)/;

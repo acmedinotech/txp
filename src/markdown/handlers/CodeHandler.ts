@@ -2,8 +2,8 @@ import {
 	BlockHandlerState,
 	FormattedLineContext,
 	LineContext,
-} from 'txp/types.mts';
-import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
+} from 'txp/types';
+import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 export class CodeHandler extends AbstractBlockHandler {
 	_id = 'markdown.block.code';

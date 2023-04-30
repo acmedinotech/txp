@@ -1,4 +1,4 @@
-import { StringOrGenerator } from './types.mts';
+import { StringOrGenerator } from './types';
 
 export const escapeHtml = (s: string, flags = 255) => {
 	return s

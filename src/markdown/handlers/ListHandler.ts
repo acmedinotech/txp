@@ -4,8 +4,8 @@ import {
 	InlineHandler,
 	LineContext,
 	ParseHandler,
-} from 'txp/types.mts';
-import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
+} from 'txp/types';
+import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 export const REGEX_MATCH_EITHER = /^(\s*)([*+-]|\d+\.)(\s+)(.*)/;
 

@@ -1,12 +1,12 @@
-import { convertFmtListToString } from '../../utils.mts';
+import { convertFmtListToString } from '../../utils';
 import {
 	BlockHandlerState,
 	FormattedLineContext,
 	LineContext,
 	ProcessResult,
 	StringOrGenerator,
-} from 'txp/types.mts';
-import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
+} from 'txp/types';
+import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 /**
  * Standard handler for generic block of text. Applies 1 special rule:

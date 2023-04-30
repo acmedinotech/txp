@@ -6,8 +6,8 @@ import {
 	ReferenceValue,
 	REFERENCE_MAP_KEY,
 	StringOrGenerator,
-} from 'txp/types.mts';
-import { escapeHtml } from '../../utils.mts';
+} from 'txp/types';
+import { escapeHtml } from '../../utils';
 
 const label_open = 0;
 const label_get = 1;

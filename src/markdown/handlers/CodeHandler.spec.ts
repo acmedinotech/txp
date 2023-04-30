@@ -1,5 +1,5 @@
-import { CodeHandler } from './CodeHandler.mts';
-import { getFormattedStringWithHandler } from '../../testUtils.mts';
+import { CodeHandler } from './CodeHandler';
+import { getFormattedStringWithHandler } from '../../testUtils';
 
 describe('txp / markdown / handlers / class CodeHandler', () => {
 	it('it parses backticks', () => {

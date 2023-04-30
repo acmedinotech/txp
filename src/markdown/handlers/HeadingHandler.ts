@@ -2,8 +2,8 @@ import {
 	BlockHandlerState,
 	FormattedLineContext,
 	LineContext,
-} from 'txp/types.mts';
-import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
+} from 'txp/types';
+import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 /**
  * Handles block headings:

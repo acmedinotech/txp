@@ -3,8 +3,8 @@ import {
 	FormattedLineContext,
 	LineContext,
 	ProcessResult,
-} from 'txp/types.mts';
-import { AbstractBlockHandler } from './AbstractBlockHandler.mts';
+} from 'txp/types';
+import { AbstractBlockHandler } from './AbstractBlockHandler';
 
 export class DataHandler extends AbstractBlockHandler {
 	_id = 'markdown.block.data';
