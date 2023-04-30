@@ -1,5 +1,5 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
-export default {
+module.exports = {
 	roots: ['<rootDir>/src'],
 	setupFilesAfterEnv: ['./jest.d.ts', './jest.extend.js'],
 	preset: 'ts-jest',
