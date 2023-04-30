@@ -1,5 +1,5 @@
-import { MarkdownParseHandler } from './markdown';
-import { MarkdownDefaultInlineHandler } from './markdown/inlineHandlers';
+import { MarkdownParseHandler } from './markdown/index';
+import { MarkdownDefaultInlineHandler } from './markdown/inlineHandlers/index';
 import { BlockHandler, InlineStateMachine } from './types';
 
 export const parseStringWithHandler = (

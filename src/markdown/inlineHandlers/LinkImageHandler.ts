@@ -6,8 +6,8 @@ import {
 	ReferenceValue,
 	REFERENCE_MAP_KEY,
 	StringOrGenerator,
-} from 'src//types';
-import { escapeHtml } from 'src//utils';
+} from '../../types';
+import { escapeHtml } from '../../utils';
 
 const label_open = 0;
 const label_get = 1;

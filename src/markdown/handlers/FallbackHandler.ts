@@ -1,4 +1,4 @@
-import { convertFmtListToString } from 'src//utils';
+import { convertFmtListToString } from '../../utils';
 import {
 	BlockHandlerState,
 	FormattedLineContext,
